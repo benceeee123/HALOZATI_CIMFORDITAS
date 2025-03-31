@@ -7,6 +7,8 @@ body {
   background-image:url(hatter.jpg) ;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
+  color: #000;
 }
 
 #content {
@@ -68,10 +70,37 @@ span
 p
 {
   text-align: justify;
-  font-size: 25px
+  font-size: 23px
 }
 
 table
 {
   background-color: rgba(227, 225, 233, 0.8);
+  float: left;
+  margin-right: 20px;
+  border-collapse: collapse;
+}
+
+th
+{
+  background-color: green;
+  color: white;
+}
+
+th,
+td
+{
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center  ;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: yellow;
 }
