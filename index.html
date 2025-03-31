@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
   <meta charset="UTF-8">
@@ -10,9 +10,11 @@
 
 <body>
   <div id="content">
-    <h1>A hálózati címfordítás <a href="https://hu.wikipedia.org/wiki/Hálózati_címfordítás" target="_blank" rel="noopener noreferrer">*</a></h1>
+    <h1>A hálózati címfordítás <a href="https://hu.wikipedia.org/wiki/Hálózati_címfordítás" target="_blank"
+        rel="noopener noreferrer">*</a></h1>
 
-    <p>A hálózati címfordítás (angolul <span>Network Address Translation</span>, röviden <span>NAT</span>) a csomagszűrő tűzfalak, illetve a
+    <p>A hálózati címfordítás (angolul <span>Network Address Translation</span>, röviden <span>NAT</span>) a csomagszűrő
+      tűzfalak, illetve a
       címfordításra képes hálózati eszközök (pl. router) kiegészítő szolgáltatása, mely lehetővé teszi a belső hálózatra
       kötött gépek közvetlen kommunikációját tetszőleges protokollokon keresztül külső gépekkel anélkül, hogy azoknak
       saját nyilvános IP-címmel kellene rendelkezniük. Címfordításra akár egyetlen számítógép is képes, így valósítható
@@ -23,7 +25,8 @@
       <p class="imgtitle">Az IPv4 címek fogyása</p>
     </div>
     <p>Az egész címfordítás témaköre abból az igényből nőtte ki magát, hogy az
-      IPv4 tartománya viszonylag kevés, 2<sup>32</sup> =256<sub>4</sub>, azaz 4 294 967 296 db egyedi IP címet tesz ki. Ebben persze benne van
+      IPv4 tartománya viszonylag kevés, 2<sup>32</sup> =256<sup>4</sup>, azaz 4 294 967 296 db egyedi IP címet tesz ki.
+      Ebben persze benne van
       az
       összes broadcast cím és a külső hálózatra nem route-olható belső címtartományok is, tehát az interneten globálisan
       használható címek összessége így még kevesebb. A gépek hálózati kártyái egynél több címet is felvehetnek egyszerre
@@ -43,28 +46,28 @@
       szabványoknak megfelelően belsőnek ismer el, és így azokat nem irányítja közvetlenül a külső hálózat felé. A belső
       címeket az alábbi táblázat mutatja be:</p>
 
-      <table>
-        <th>
-          <tr>RFC1518</tr>
-          <tr>IP cimtartomany</tr>
-          <tr>Egyedi cimek szama</tr>
-        </th>
-        <td>
-          <tr>24-bit block</tr>
-          <tr>10.0.0.0-10.255.255.255</tr>
-          <tr>16 777 216 db</tr>
-        </td>
-        <td>
-          <tr>20-bit block</tr>
-          <tr>172.16.0.0-172.31.255.255</tr>
-          <tr>1 048 576 db</tr>
-        </td>
-        <td>
-          <tr>16-bit block</tr>
-          <tr>192.16.0.0-172.31.255.255</tr>
-          <tr>65 536 db</tr>
-        </td>
-      </table>
+    <table>
+      <th>
+        <td>RFC1518</td>
+        <td>IP cimtartomany</td>
+        <td>Egyedi cimek szama</td>
+      </th>
+      <tr>
+        <td>24-bit block</td>
+        <td>10.0.0.0-10.255.255.255</td>
+        <td>16 777 216 db</td>
+      </tr>
+      <tr>
+        <td>20-bit block</td>
+        <td>172.16.0.0-172.31.255.255</td>
+        <td>1 048 576 db</td>
+      </tr>
+      <tr>
+        <td>16-bit block</td>
+        <td>192.16.0.0-172.31.255.255</td>
+        <td>65 536 db</td>
+      </tr>
+    </table>
 
     <p>A címfordítás segítségével megoldható, hogy akár egy egész cég teljes belső hálózati forgalma egyetlen külső IP
       cím
