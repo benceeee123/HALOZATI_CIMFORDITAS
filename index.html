@@ -23,7 +23,7 @@
       <p class="imgtitle">Az IPv4 címek fogyása</p>
     </div>
     <p>Az egész címfordítás témaköre abból az igényből nőtte ki magát, hogy az
-      IPv4 tartománya viszonylag kevés, 232=2564, azaz 4 294 967 296 db egyedi IP címet tesz ki. Ebben persze benne van
+      IPv4 tartománya viszonylag kevés, 2<sup>32</sup> =256<sub>4</sub>, azaz 4 294 967 296 db egyedi IP címet tesz ki. Ebben persze benne van
       az
       összes broadcast cím és a külső hálózatra nem route-olható belső címtartományok is, tehát az interneten globálisan
       használható címek összessége így még kevesebb. A gépek hálózati kártyái egynél több címet is felvehetnek egyszerre
@@ -42,6 +42,19 @@
       hálózat fogalma. A belső hálózatnak olyan címtartományt kell adni, amelyet minden hálózati eszköz a nemzetközi
       szabványoknak megfelelően belsőnek ismer el, és így azokat nem irányítja közvetlenül a külső hálózat felé. A belső
       címeket az alábbi táblázat mutatja be:</p>
+
+      <table>
+        <th>
+          <tr>RFC1518</tr>
+          <tr>IP cimtartomany</tr>
+          <tr>Egyedi cimek szama</tr>
+        </th>
+        <td>
+          <tr>24-bit block</tr>
+          <tr>10.0.0.0-10.255.255.255</tr>
+          <tr>16777216 db</tr>
+        </td>
+      </table>
 
     <p>A címfordítás segítségével megoldható, hogy akár egy egész cég teljes belső hálózati forgalma egyetlen külső IP
       cím
